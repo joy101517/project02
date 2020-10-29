@@ -1,0 +1,405 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* CSS RESET OVER */
+
+
+/* all */
+body {
+  font-family: 'Roboto',
+    sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.f-column {
+  flex-direction: column;
+}
+
+.f-wrap {
+  flex-wrap: wrap;
+}
+
+.jc-c {
+  justify-content: center;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+.ai-c {
+  align-items: center;
+}
+
+.f-shrink {
+  flex-shrink: 0;
+}
+
+.wrap {
+  margin: 0 auto;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.subTitle {
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* banner */
+
+.banner {
+  /* height: 958px; */
+  background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/banner.png) center/cover no-repeat;
+  color: #FFF;
+  padding: 356px 0 268px;
+}
+
+.banner .wrap {
+  width: 304px;
+}
+
+.banner h5 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 42px;
+  align-self: flex-start;
+}
+
+.banner h1 {
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 94px;
+  margin-bottom: 32px;
+}
+
+.banner .subTitle {
+  margin-bottom: 48px;
+  font-weight: 700;
+}
+
+.sns li {
+  margin-right: 16px;
+  transition: .3s;
+}
+
+.sns li:last-child {
+  margin-right: 0;
+}
+
+
+.sns li:hover {
+  transform: translateY(-10px);
+}
+
+/* about */
+.profile {
+  width: 412px;
+  padding: 64px 0 24px;
+}
+
+.profile .title {
+  margin-bottom: 40px;
+}
+
+.photo {
+  width: 384px;
+  margin-bottom: 24px;
+}
+
+.info {
+  margin-bottom: 16px;
+}
+
+.info li {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.career {
+  width: 384px;
+  border-top: 1px solid #000;
+  padding-top: 32px;
+}
+
+.circle {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #891818;
+  margin-right: 16px;
+}
+
+.career li {
+  margin-bottom: 32px;
+}
+
+.career p {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 42px;
+}
+
+/* brand */
+.brand {
+  background-color: #000;
+  color: #fff;
+  padding: 64px 0 160px;
+}
+
+.brand .subTitle {
+  margin-bottom: 32px;
+  font-weight: 500;
+}
+
+.brandInfo {
+  margin-bottom: 68px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.brandWork img {
+  transition: .5s;
+}
+
+.brandWork img:hover {
+  transform: scale(1.1);
+}
+
+.brandWork1 {
+  width: 792px;
+  margin-bottom: 40px;
+}
+
+.brandWork2 {
+  width: 588px;
+  margin-right: 24px;
+}
+
+brandWork3 {
+  width: 588px;
+}
+
+/* other work */
+.work {
+  width: 1200px;
+  padding: 64px 0 104px;
+}
+
+.work .title {
+  margin-bottom: 24px;
+}
+
+.workInfo {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 56px;
+}
+
+.production li {
+  margin-bottom: 56px;
+}
+
+.production img {
+  margin-bottom: 16px;
+  transition: .3s
+}
+
+.production img:hover {
+  transform: translate(-10px, -10px);
+  box-shadow: 0px 3px 20px #333;
+}
+
+.workTitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 42px;
+  text-align: center;
+}
+
+/* contact */
+.contact {
+  background-color: #000;
+  color: #fff;
+  padding: 64px 0;
+}
+
+.contact .wrap {
+  width: 315px;
+}
+
+.contactMethod li {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 16px;
+  transition: .3s;
+}
+
+.contactMethod li:hover {
+  border-bottom: 2px solid rgb(243, 243, 119);
+}
