@@ -177,7 +177,7 @@ body {
   flex-shrink: 0;
 }
 
-.wrap {
+.x-center {
   margin: 0 auto;
 }
 
@@ -206,17 +206,16 @@ a {
 /* banner */
 
 .banner {
-  /* height: 958px; */
+  height: 958px;
   background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/banner.png) center/cover no-repeat;
   color: #FFF;
-  padding: 356px 0 268px;
 }
 
 .banner .wrap {
   width: 304px;
 }
 
-.banner h5 {
+.banner span {
   font-weight: 700;
   font-size: 24px;
   line-height: 42px;
@@ -282,22 +281,31 @@ a {
   padding-top: 32px;
 }
 
-.circle {
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  background-color: #891818;
-  margin-right: 16px;
-}
-
 .career li {
   margin-bottom: 32px;
+  text-align: center;
 }
 
 .career p {
   font-weight: 700;
   font-size: 24px;
   line-height: 42px;
+  position: relative;
+  left: 16px;
+  display: inline;
+}
+
+.career p::before {
+  content: '';
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  left: -38px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: #891818;
+  /* margin-right: 16px; */
 }
 
 /* brand */
